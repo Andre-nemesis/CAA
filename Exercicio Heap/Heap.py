@@ -20,7 +20,9 @@ def constroiHeap(n, arr):
 
 def heapsort(arr):
     n = len(arr)
-
+    
+    constroiHeap(n,arr)
+    
     for i in range(n-1, 0, -1):
         troca(i, 0, arr)
         peneira(0, i, arr)
