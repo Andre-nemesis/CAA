@@ -1,0 +1,36 @@
+8.
+    1 -> Bubble Sort
+        Nesste primeiro algoritmo de Bubble Sort, a sua função de complexidade será de n² para o pior caso, 
+        caso seja necessário informar as constantes da sua função, a complexidade será de n² + 4, por conta 
+        das linhas 5 a 8, que realizarão as trocas dos valores e oredenarão os elementos, como nesse algoritmo 
+        possui dois laços de repetição um dentro do outro, fará com que a sua complexidade em caso médio seja
+        abaixo de n² ou até n², e para seu melhor caso, quando o vetor esteja parcialmente ordenado, complexidade n.
+    
+    2 ->Bubble Sort 2
+        Esse segundo Bubble Sort possui uma variação na sua construção, no primeiro algoritmo mostrado do Bubble Sort
+        ele possuia dois laços que fariam n iterações, contudo neste algoritmo a quantidade de iterações do primeiro
+        laço o 'while' é feita atráves de uma variável de controle booleana, assim enquanto ela for True, irá sendo 
+        feita mais iterações, contudo, caso entre no segundo laço de repetição o 'for' e a condição da variável não
+        seja alterada para True novamente, será feita 'n' iterações no for e apenas 1 iteração no while, sendo o melhor
+        caso em tempo 'n', contudo caso ocorra alguma troca de valores para organizar o vetor, então o loop 'while' ocorrerá
+        mais uma vez, logo ele não precisará realizar 'n' iterações, mas sim 'k' iterações por troca realizada para ordenar o vetor
+        para um caso médio, a complexidade deste algoritmo será abaixo de 'n²' e para o pior caso será necessário fazer 'n' iterações
+        no loop 'while' fazendo com que seja 'n²'.
+    
+    3 -> Algumacoisa
+        Para esse algoritmo o tempo de complexidade pode ser considerado constante para todos os caso(melhor,médio,pior)
+        a primeiro modo, como existe 3 loops no código, naturalmente ele será mais pesado que os dois algoritmos anteriores,
+        mas ao analisálo mais profundamente, para entradas muito pequenas de 'n', ele poderá ser tempo 'n', como exemplo disso
+        caso 'n' seja 2 ou 1, ocorrerá se ser tempo 'n', contudo como esses casos não são tão comuns, o algoritmo irá realizar
+        iterações de acordo com o valor 'n' passado como argumento no metodo, assim o loop n°1 dependerá do valor de 'n', e 
+        segundo dependerá do valor do primeiro loop + 1 até 'n' + 1, fazendo com que, ao aumenta o número de iterações no primeiro
+        loop, irá diminuir o número de iterações no segundo loop, e o terceiro loop irá de 1 até o valor de iterações do segundo loop + 1,
+        assim como o segundo loop irá diminuir de iterações ao número de iterações do primeiro loop aumentar, o terceiro loop também
+        terá essa redução de iterações, assim, o algoritmo não chega a fazer 'n' iterações em cada loop mas uma quantidade menor a cada vez,
+        fazendo com que ele tenha complexidade n³ mas não rode n³ vezes, dito isto, para todos os casos será n³
+
+    4 -> Algumacoisa2
+        Para essa variação do algoritmo anterior, pode-se notar que o número de iterações irá ser menor do que o anterior, por manter
+        o mesmo estilo de o segundo loop depender do primeiro e o terceiro do segundo loop, a alteração feita no segundo loop, faz com 
+        ele possua menos iterações,e o primeiro loop mais iterações e como o segundo loop usará o indice do primeiro loop, acontecerá que,
+        a sua complexidade continuará n³ para todos os casos, mas ele fará menos iterações a cada loop do que o algoritmo acima.

@@ -1,0 +1,16 @@
+5°
+    1 -> n² + 2
+        Como os dois loops ocorrem de forma 'normal', o tempo do algoritmo será n²,
+        o + 2 acontece ao se somar o tempo das duas linhas retirando o loop, como na primeira linha de
+        iniciação de variável e a segunda de incrementação.
+    2 -> n.log n + 2
+        Esse algoritmo será neste tempo pois, ao observar o primeiro loop, nota-se que a forma como cada 
+        iteração irá ocorrer, será a cada dobro do número anterior, assim não irá percorrer n elementos,
+        mas n/2 elementos, fazendo assim uma função logaritmica, o outro n será do segundo loop, onde,
+        cada iteração funcionará de forrma normal percorrendo n elementos, a adição de + 2 ocorre pelo o 
+        mesmo motivo descrito no primeiro algoritmo.
+    3 -> Infinito
+        Esse algoritmo será um loop infinito, pois como pode-se observar, na segunda linha, o loop inicia-se
+        com 0 sendo incrementado pelo a multiplicação do valor da iteração anterior, fazendo com que fosse esse loop
+        nunca saia da primeira iteração, pois qualquer valor multiplicado por 0, continuará a ser 0, fazendo com 
+        não possa ocorrer as próximas linhas de forma convencional.
